@@ -1,5 +1,30 @@
 # RobotLearningFinal
+This project implements a solution to the **Tower of Hanoi** problem using a **6-DOF OpenManipulator robot** with **ROS** communication.
+
+The system integrates the following components:
+
+- **Pick-and-place command generation via a Large Language Model (LLM)**  
+- **Object detection and depth estimation using an Intel RealSense camera** to track pick and place locations  
+- **Motion execution** through predefined Dynamic Movement Primitives (DMPs)
+
+The robot receives high-level move instructions from the LLM, detects object poses via RealSense, and executes precise movements to solve the puzzle autonomously.
+The necessary ROS packages are provided in https://github.com/shailjadav/ARL_25_noetic_packages.git
 ![Overview](Overview.png)
+
+### Required ROS Packages
+
+All necessary ROS packages are available at the following repository:
+
+> 🔗 [https://github.com/shailjadav/ARL_25_noetic_packages.git](https://github.com/shailjadav/ARL_25_noetic_packages.git)
+
+Make sure to clone the repository into your ROS workspace and build it before running the system:
+
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/shailjadav/ARL_25_noetic_packages.git
+cd ~/catkin_ws
+catkin_make
+source devel/setup.bash
 
 ### LLM
 Tower of hanoi game solver with LLM(green part of the overview) and its scripts are located in the directory /LLM_TOH
