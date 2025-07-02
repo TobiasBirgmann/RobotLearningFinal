@@ -8,7 +8,7 @@ The system integrates the following components:
 - **Motion execution** through predefined Dynamic Movement Primitives (DMPs)
 
 The robot receives high-level move instructions from the LLM, detects object poses via RealSense, and executes precise movements to solve the puzzle autonomously.
-The necessary ROS packages are provided in https://github.com/shailjadav/ARL_25_noetic_packages.git
+
 ![Overview](Overview.png)
 
 ### Required ROS Packages
