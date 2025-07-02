@@ -7,6 +7,8 @@ The system integrates the following components:
 - **Object detection and depth estimation using an Intel RealSense camera** to track pick and place locations  
 - **Motion execution** through predefined Dynamic Movement Primitives (DMPs)
 
+![TOH](RL_OM_TOH.gif)
+
 The robot receives high-level move instructions from the LLM, detects object poses via RealSense, and executes precise movements to solve the puzzle autonomously.
 
 ![Overview](Overview.png)
