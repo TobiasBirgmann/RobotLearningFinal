@@ -25,6 +25,7 @@ git clone https://github.com/shailjadav/ARL_25_noetic_packages.git
 cd ~/catkin_ws
 catkin_make
 source devel/setup.bash
+```
 
 ### LLM
 Tower of hanoi game solver with LLM(green part of the overview) and its scripts are located in the directory /LLM_TOH
